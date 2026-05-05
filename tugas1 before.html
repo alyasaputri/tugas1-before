@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">    
+    <head>
+    </head>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background: #f696ce;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+        }
+        button {
+            padding: 10px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit { background: green; color: white; }
+        .reset { background: rgb(252, 12, 28); color: white; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        
+
+
+
+
+    </style>
+
+    <body>
+    <h2>Form Data Mahasiswa</h2>
+
+    <form id="formMahasiswa">
+        <label>NIM</label>
+        <input type="text" id="nim" required>
+
+        <label>Nama</label>
+        <input type="text" id="nama" required>
+
+        <label>Alamat</label>
+        <textarea id="alamat"></textarea>
+
+        <label>Jenis Kelamin</label><br>
+        <input type="radio" name="jk" value="Pria"> Pria
+        <input type="radio" name="jk" value="Wanita"> Wanita
+        <br><br>
+
+        <label>Tanggal Lahir</label>
+        <select id="tanggal"></select>
+        <select id="bulan">
+            <option value="01">Januari</option>
+            <option value="02">Februari</option>
+            <option value="03">Maret</option>
+            <option value="04">April</option>
+            <option value="05">Mei</option>
+            <option value="06">Juni</option>
+            <option value="07">Juli</option>
+            <option value="08">Agustus</option>
+            <option value="09">September</option>
+            <option value="10">Oktober</option>
+            <option value="11">November</option>
+            <option value="12">Desember</option>
+        </select>
+        <select id="tahun"></select>
+
+        <label>Password</label>
+        <input type="password" id="password">
+
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+    </form>
+
+    <h2>Data Mahasiswa</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>JK</th>
+                <th>TTL</th>
+                <th>Password</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    </body>
+</html>
